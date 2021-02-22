@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,29 @@
 		D616113225E3305E00A7CB3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D616113025E3305E00A7CB3D /* Main.storyboard */; };
 		D616113425E3305E00A7CB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D616113325E3305E00A7CB3D /* Assets.xcassets */; };
 		D616113725E3305E00A7CB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D616113525E3305E00A7CB3D /* LaunchScreen.storyboard */; };
+		D6A8774A25E362B500F463E7 /* HorizontalGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616116625E361BF00A7CB3D /* HorizontalGalleryViewController.swift */; };
+		D6A8774C25E362DF00F463E7 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616115D25E3618600A7CB3D /* ExampleView.swift */; };
+		D6A8774E25E362ED00F463E7 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616115C25E3618600A7CB3D /* Random.swift */; };
+		D6A8774F25E362ED00F463E7 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616115E25E3618600A7CB3D /* TestData.swift */; };
+		D6A8775025E362ED00F463E7 /* LabelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616115F25E3618600A7CB3D /* LabelProvider.swift */; };
+		D6A8775125E362ED00F463E7 /* DynamicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616116025E3618600A7CB3D /* DynamicView.swift */; };
+		D6A8775225E362ED00F463E7 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616116125E3618600A7CB3D /* Util.swift */; };
+		D6A8775325E362ED00F463E7 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616116225E3618600A7CB3D /* CollectionViewController.swift */; };
+		D6A8775425E362ED00F463E7 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D616116325E3618600A7CB3D /* SquareView.swift */; };
+		D6A8775825E3632100F463E7 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8775725E3632100F463E7 /* Messages.swift */; };
+		D6ACE14B25E36BFE00FCBD65 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8775C25E3677400F463E7 /* GridViewController.swift */; };
+		D6ACE15025E36C1200FCBD65 /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776025E3679500F463E7 /* ArticleData.swift */; };
+		D6ACE15125E36C1200FCBD65 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776125E3679500F463E7 /* ArticleView.swift */; };
+		D6ACE15225E36C1200FCBD65 /* ArticleExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776225E3679500F463E7 /* ArticleExampleViewController.swift */; };
+		D6ACE15425E36C1600FCBD65 /* ReloadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776425E367B100F463E7 /* ReloadDataViewController.swift */; };
+		D6ACE15625E36C1800FCBD65 /* ReloadAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776625E367C500F463E7 /* ReloadAnimationViewController.swift */; };
+		D6ACE15825E36C1B00FCBD65 /* HeaderExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776825E367DF00F463E7 /* HeaderExampleViewController.swift */; };
+		D6ACE15B25E36C2200FCBD65 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776B25E3681900F463E7 /* MessagesViewController.swift */; };
+		D6ACE15C25E36C2200FCBD65 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776C25E3681900F463E7 /* MessageCell.swift */; };
+		D6ACE15E25E36C2C00FCBD65 /* EdgeShrinkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776E25E3682600F463E7 /* EdgeShrinkAnimator.swift */; };
+		D6ACE15F25E36C2C00FCBD65 /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776F25E3682600F463E7 /* SelectionButton.swift */; };
+		D6ACE16025E36C2C00FCBD65 /* AnimatorExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8777025E3682600F463E7 /* AnimatorExampleViewController.swift */; };
+		D6ACE16125E36C2C00FCBD65 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8777125E3682600F463E7 /* ZoomAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +51,29 @@
 		D616113325E3305E00A7CB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D616113625E3305E00A7CB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D616113825E3305E00A7CB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D616115C25E3618600A7CB3D /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		D616115D25E3618600A7CB3D /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		D616115E25E3618600A7CB3D /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		D616115F25E3618600A7CB3D /* LabelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelProvider.swift; sourceTree = "<group>"; };
+		D616116025E3618600A7CB3D /* DynamicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicView.swift; sourceTree = "<group>"; };
+		D616116125E3618600A7CB3D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		D616116225E3618600A7CB3D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D616116325E3618600A7CB3D /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		D616116625E361BF00A7CB3D /* HorizontalGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGalleryViewController.swift; sourceTree = "<group>"; };
+		D6A8775725E3632100F463E7 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		D6A8775C25E3677400F463E7 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		D6A8776025E3679500F463E7 /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
+		D6A8776125E3679500F463E7 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		D6A8776225E3679500F463E7 /* ArticleExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleExampleViewController.swift; sourceTree = "<group>"; };
+		D6A8776425E367B100F463E7 /* ReloadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadDataViewController.swift; sourceTree = "<group>"; };
+		D6A8776625E367C500F463E7 /* ReloadAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadAnimationViewController.swift; sourceTree = "<group>"; };
+		D6A8776825E367DF00F463E7 /* HeaderExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderExampleViewController.swift; sourceTree = "<group>"; };
+		D6A8776B25E3681900F463E7 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		D6A8776C25E3681900F463E7 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		D6A8776E25E3682600F463E7 /* EdgeShrinkAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeShrinkAnimator.swift; sourceTree = "<group>"; };
+		D6A8776F25E3682600F463E7 /* SelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButton.swift; sourceTree = "<group>"; };
+		D6A8777025E3682600F463E7 /* AnimatorExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorExampleViewController.swift; sourceTree = "<group>"; };
+		D6A8777125E3682600F463E7 /* ZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +94,6 @@
 				C20EB73645316253A8C9EF88 /* Pods-testCollectionKit.debug.xcconfig */,
 				2109C72DA563E23A7721C1F9 /* Pods-testCollectionKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +126,110 @@
 		D616112925E3305E00A7CB3D /* testCollectionKit */ = {
 			isa = PBXGroup;
 			children = (
+				D616116525E361BF00A7CB3D /* 1.HorizontalGalleryExample */,
+				D6A8775B25E3677400F463E7 /* 2.GridExample */,
+				D6A8775F25E3679500F463E7 /* 3.ArticleExample */,
+				D6A8776325E367B100F463E7 /* 4.ReloadDataExample */,
+				D6A8776525E367C500F463E7 /* 5.ReloadAnimationExample */,
+				D6A8776725E367DF00F463E7 /* 6.HeaderExample */,
+				D6A8776925E3681900F463E7 /* 7.ChatExample (Advance) */,
+				D6A8776D25E3682600F463E7 /* 8.AnimatorExample */,
 				D616112A25E3305E00A7CB3D /* AppDelegate.swift */,
+				D616113325E3305E00A7CB3D /* Assets.xcassets */,
+				D616115B25E3618600A7CB3D /* BaseSupport */,
+				D616113825E3305E00A7CB3D /* Info.plist */,
+				D616113525E3305E00A7CB3D /* LaunchScreen.storyboard */,
+				D616113025E3305E00A7CB3D /* Main.storyboard */,
 				D616112C25E3305E00A7CB3D /* SceneDelegate.swift */,
 				D616112E25E3305E00A7CB3D /* ViewController.swift */,
-				D616113025E3305E00A7CB3D /* Main.storyboard */,
-				D616113325E3305E00A7CB3D /* Assets.xcassets */,
-				D616113525E3305E00A7CB3D /* LaunchScreen.storyboard */,
-				D616113825E3305E00A7CB3D /* Info.plist */,
 			);
 			path = testCollectionKit;
+			sourceTree = "<group>";
+		};
+		D616115B25E3618600A7CB3D /* BaseSupport */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8775725E3632100F463E7 /* Messages.swift */,
+				D616115C25E3618600A7CB3D /* Random.swift */,
+				D616115D25E3618600A7CB3D /* ExampleView.swift */,
+				D616115E25E3618600A7CB3D /* TestData.swift */,
+				D616115F25E3618600A7CB3D /* LabelProvider.swift */,
+				D616116025E3618600A7CB3D /* DynamicView.swift */,
+				D616116125E3618600A7CB3D /* Util.swift */,
+				D616116225E3618600A7CB3D /* CollectionViewController.swift */,
+				D616116325E3618600A7CB3D /* SquareView.swift */,
+			);
+			path = BaseSupport;
+			sourceTree = "<group>";
+		};
+		D616116525E361BF00A7CB3D /* 1.HorizontalGalleryExample */ = {
+			isa = PBXGroup;
+			children = (
+				D616116625E361BF00A7CB3D /* HorizontalGalleryViewController.swift */,
+			);
+			path = 1.HorizontalGalleryExample;
+			sourceTree = "<group>";
+		};
+		D6A8775B25E3677400F463E7 /* 2.GridExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8775C25E3677400F463E7 /* GridViewController.swift */,
+			);
+			path = 2.GridExample;
+			sourceTree = "<group>";
+		};
+		D6A8775F25E3679500F463E7 /* 3.ArticleExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8776025E3679500F463E7 /* ArticleData.swift */,
+				D6A8776125E3679500F463E7 /* ArticleView.swift */,
+				D6A8776225E3679500F463E7 /* ArticleExampleViewController.swift */,
+			);
+			path = 3.ArticleExample;
+			sourceTree = "<group>";
+		};
+		D6A8776325E367B100F463E7 /* 4.ReloadDataExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8776425E367B100F463E7 /* ReloadDataViewController.swift */,
+			);
+			path = 4.ReloadDataExample;
+			sourceTree = "<group>";
+		};
+		D6A8776525E367C500F463E7 /* 5.ReloadAnimationExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8776625E367C500F463E7 /* ReloadAnimationViewController.swift */,
+			);
+			path = 5.ReloadAnimationExample;
+			sourceTree = "<group>";
+		};
+		D6A8776725E367DF00F463E7 /* 6.HeaderExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8776825E367DF00F463E7 /* HeaderExampleViewController.swift */,
+			);
+			path = 6.HeaderExample;
+			sourceTree = "<group>";
+		};
+		D6A8776925E3681900F463E7 /* 7.ChatExample (Advance) */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8776B25E3681900F463E7 /* MessagesViewController.swift */,
+				D6A8776C25E3681900F463E7 /* MessageCell.swift */,
+			);
+			path = "7.ChatExample (Advance)";
+			sourceTree = "<group>";
+		};
+		D6A8776D25E3682600F463E7 /* 8.AnimatorExample */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8776E25E3682600F463E7 /* EdgeShrinkAnimator.swift */,
+				D6A8776F25E3682600F463E7 /* SelectionButton.swift */,
+				D6A8777025E3682600F463E7 /* AnimatorExampleViewController.swift */,
+				D6A8777125E3682600F463E7 /* ZoomAnimator.swift */,
+			);
+			path = 8.AnimatorExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +346,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6ACE15025E36C1200FCBD65 /* ArticleData.swift in Sources */,
+				D6ACE15125E36C1200FCBD65 /* ArticleView.swift in Sources */,
+				D6ACE15225E36C1200FCBD65 /* ArticleExampleViewController.swift in Sources */,
+				D6ACE15425E36C1600FCBD65 /* ReloadDataViewController.swift in Sources */,
+				D6A8774A25E362B500F463E7 /* HorizontalGalleryViewController.swift in Sources */,
+				D6ACE15625E36C1800FCBD65 /* ReloadAnimationViewController.swift in Sources */,
+				D6ACE14B25E36BFE00FCBD65 /* GridViewController.swift in Sources */,
+				D6A8774E25E362ED00F463E7 /* Random.swift in Sources */,
+				D6ACE15B25E36C2200FCBD65 /* MessagesViewController.swift in Sources */,
+				D6ACE15C25E36C2200FCBD65 /* MessageCell.swift in Sources */,
+				D6ACE15825E36C1B00FCBD65 /* HeaderExampleViewController.swift in Sources */,
+				D6ACE15E25E36C2C00FCBD65 /* EdgeShrinkAnimator.swift in Sources */,
+				D6ACE15F25E36C2C00FCBD65 /* SelectionButton.swift in Sources */,
+				D6ACE16025E36C2C00FCBD65 /* AnimatorExampleViewController.swift in Sources */,
+				D6ACE16125E36C2C00FCBD65 /* ZoomAnimator.swift in Sources */,
+				D6A8774C25E362DF00F463E7 /* ExampleView.swift in Sources */,
+				D6A8774F25E362ED00F463E7 /* TestData.swift in Sources */,
 				D616112F25E3305E00A7CB3D /* ViewController.swift in Sources */,
+				D6A8775025E362ED00F463E7 /* LabelProvider.swift in Sources */,
+				D6A8775825E3632100F463E7 /* Messages.swift in Sources */,
+				D6A8775125E362ED00F463E7 /* DynamicView.swift in Sources */,
+				D6A8775225E362ED00F463E7 /* Util.swift in Sources */,
+				D6A8775325E362ED00F463E7 /* CollectionViewController.swift in Sources */,
+				D6A8775425E362ED00F463E7 /* SquareView.swift in Sources */,
 				D616112B25E3305E00A7CB3D /* AppDelegate.swift in Sources */,
 				D616112D25E3305E00A7CB3D /* SceneDelegate.swift in Sources */,
 			);

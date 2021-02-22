@@ -7,5 +7,5 @@ target 'testCollectionKit' do
 
   # Pods for testCollectionKit
 pod "CollectionKit"
-
+pod "CollectionKit/WobbleAnimator"
 end

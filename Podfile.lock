@@ -2,17 +2,24 @@ PODS:
   - CollectionKit (2.4.0):
     - CollectionKit/Core (= 2.4.0)
   - CollectionKit/Core (2.4.0)
+  - CollectionKit/WobbleAnimator (2.4.0):
+    - CollectionKit/Core
+    - YetAnotherAnimationLibrary (~> 1.4.0)
+  - YetAnotherAnimationLibrary (1.4.0)
 
 DEPENDENCIES:
   - CollectionKit
+  - CollectionKit/WobbleAnimator
 
 SPEC REPOS:
   trunk:
     - CollectionKit
+    - YetAnotherAnimationLibrary
 
 SPEC CHECKSUMS:
   CollectionKit: 8f01e7629185bb81072c4aa734d105df5c2d1c8b
+  YetAnotherAnimationLibrary: 7f808b10c2d193dd3e82407e722fa60aa0bdff2d
 
-PODFILE CHECKSUM: e0d13e34929cea0c285300385fae9f400ee354fe
+PODFILE CHECKSUM: d8348a5ffa043cff4b7269a35fabd34230005f4f
 
 COCOAPODS: 1.10.1
