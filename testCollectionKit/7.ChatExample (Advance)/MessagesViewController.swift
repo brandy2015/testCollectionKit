@@ -106,9 +106,16 @@ class MessagesViewController: UIViewController {
 
   let dataSource = MessageDataProvider()
   let animator = MessageAnimator()
-  
-  let newMessageButton = UIButton(type: .system)
-
+   
+    
+    @IBOutlet weak var newMessageButton: UIButton!
+    @IBAction func newMessageButton(_ sender: Any) {
+        send()//lightBlue
+        
+    }
+    
+    
+    
   override var canBecomeFirstResponder: Bool {
     return true
   }
@@ -117,14 +124,9 @@ class MessagesViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = UIColor(white: 0.97, alpha: 1.0)
     view.clipsToBounds = true
-
-    newMessageButton.setImage(UIImage(named:"ic_send")!, for: .normal)
-    newMessageButton.addTarget(self, action: #selector(send), for: .touchUpInside)
-    newMessageButton.sizeToFit()
-    newMessageButton.backgroundColor = .lightBlue
-    newMessageButton.tintColor = .white
-    view.addSubview(newMessageButton)
-
+    
+ 
+    
     collectionView.delegate = self
     collectionView.contentInset = UIEdgeInsets(top: 30, left: 10, bottom: 54, right: 10)
     collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 30, left: 0, bottom: 54, right: 0)
@@ -156,8 +158,7 @@ class MessagesViewController: UIViewController {
 
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    
-    newMessageButton.frame = CGRect(x: 0, y: view.bounds.height - 44, width: view.bounds.width, height: 44)
+     
     
     let isAtBottom = collectionView.contentOffset.y >= collectionView.offsetFrame.maxY - 10
     if !collectionView.hasReloaded {

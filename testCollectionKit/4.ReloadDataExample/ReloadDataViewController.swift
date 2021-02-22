@@ -10,6 +10,7 @@ import UIKit
 import CollectionKit
 
 class ReloadDataViewController: UIViewController {
+    var currentMax: Int = 5
     
     @IBOutlet weak var collectionView: CollectionView!
     var provider: Provider? {
@@ -17,35 +18,36 @@ class ReloadDataViewController: UIViewController {
       set { collectionView.provider = newValue }
     }
 
-  let dataSource = ArrayDataSource<Int>(data: Array(0..<5)) { (_, data) in
-    return "\(data)"
-  }
+    let dataSource = ArrayDataSource<Int>(data: Array(0..<5)) { (_, data) in
+        return "\(data)"
+    }
 
-  let addButton: UIButton = {
-    let button = UIButton()
-    button.setTitle("+", for: .normal)
-    button.titleLabel?.font = .boldSystemFont(ofSize: 20)
-    button.backgroundColor = UIColor(hue: 0.6, saturation: 0.68, brightness: 0.98, alpha: 1)
-    button.layer.shadowColor = UIColor.black.cgColor
-    button.layer.shadowOffset = CGSize(width: 0, height: -12)
-    button.layer.shadowRadius = 10
-    button.layer.shadowOpacity = 0.1
-    return button
-  }()
+    
+    
+    @IBAction func addButton(_ sender: Any) {
+        add()
+    }
+    @objc func add() {
+        dataSource.data.append(currentMax)
+        currentMax += 1
+        // NOTE: Call reloadData() directly will make collectionView update immediately, so that contentSize
+        // of collectionView will be updated.
+        collectionView.reloadData()
+        collectionView.scrollTo(edge: .bottom, animated:true)
+    }
+  
 
-  var currentMax: Int = 5
+  
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    addButton.addTarget(self, action: #selector(add), for: .touchUpInside)
-    view.addSubview(addButton)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+   
+        collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 54, right: 10)
 
-    collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 54, right: 10)
-
-    provider = BasicProvider(
-      dataSource: dataSource,
-      viewSource: { (view: SquareView, data: Int, index: Int) in
-        view.backgroundColor = UIColor(hue: CGFloat(data) / 30,
+        provider = BasicProvider(
+            dataSource: dataSource,
+            viewSource: { (view: SquareView, data: Int, index: Int) in
+                view.backgroundColor = UIColor(hue: CGFloat(data) / 30,
                                        saturation: 0.68,
                                        brightness: 0.98,
                                        alpha: 1)
@@ -66,19 +68,8 @@ class ReloadDataViewController: UIViewController {
     )
   }
 
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    addButton.frame = CGRect(x: 0, y: view.bounds.height - 44,
-                             width: view.bounds.width, height: 44)
-  }
+   
 
-  @objc func add() {
-    dataSource.data.append(currentMax)
-    currentMax += 1
-    // NOTE: Call reloadData() directly will make collectionView update immediately, so that contentSize
-    // of collectionView will be updated.
-    collectionView.reloadData()
-    collectionView.scrollTo(edge: .bottom, animated:true)
-  }
+  
 }
 

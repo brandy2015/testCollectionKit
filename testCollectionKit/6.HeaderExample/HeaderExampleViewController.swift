@@ -17,26 +17,17 @@ class HeaderExampleViewController: UIViewController {
       set { collectionView.provider = newValue }
     }
 
-  let toggleButton: UIButton = {
-    let button = UIButton()
-    button.setTitle("Toggle Sticky Header", for: .normal)
-    button.titleLabel?.font = .boldSystemFont(ofSize: 20)
-    button.backgroundColor = UIColor(hue: 0.6, saturation: 0.68, brightness: 0.98, alpha: 1)
-    button.layer.shadowColor = UIColor.black.cgColor
-    button.layer.shadowOffset = CGSize(width: 0, height: -12)
-    button.layer.shadowRadius = 10
-    button.layer.shadowOpacity = 0.1
-    return button
-  }()
+    @IBAction func toggleBTN(_ sender: Any) {
+        toggleSticky()
+    }
+    
+     
 
   var headerComposer: ComposedHeaderProvider<UILabel>!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    toggleButton.addTarget(self, action: #selector(toggleSticky), for: .touchUpInside)
-    view.addSubview(toggleButton)
-
+ 
     collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 44, right: 0)
 
     let sections: [Provider] = (1...10).map { _ in
@@ -74,10 +65,5 @@ class HeaderExampleViewController: UIViewController {
 
   @objc func toggleSticky() {
     headerComposer.isSticky = !headerComposer.isSticky
-  }
-
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    toggleButton.frame = CGRect(x: 0, y: view.bounds.height - 44, width: view.bounds.width, height: 44)
   }
 }

@@ -87,17 +87,10 @@ class ReloadAnimationViewController: UIViewController {
     return "\(data)"
   }
 
-  let reloadButton: UIButton = {
-    let button = UIButton()
-    button.setTitle("Reload", for: .normal)
-    button.titleLabel?.font = .boldSystemFont(ofSize: 20)
-    button.backgroundColor = UIColor(hue: 0.6, saturation: 0.68, brightness: 0.98, alpha: 1)
-    button.layer.shadowColor = UIColor.black.cgColor
-    button.layer.shadowOffset = CGSize(width: 0, height: -12)
-    button.layer.shadowRadius = 10
-    button.layer.shadowOpacity = 0.1
-    return button
-  }()
+    @IBAction func reloadBTN(_ sender: Any) {
+        reload()
+    }
+    
 
   var currentDataIndex = 0
   var data: [[Int]] = [
@@ -109,9 +102,7 @@ class ReloadAnimationViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    reloadButton.addTarget(self, action: #selector(reload), for: .touchUpInside)
-    view.addSubview(reloadButton)
-
+   
     collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 54, right: 10)
     dataSource.data = data[0]
 
@@ -137,13 +128,7 @@ class ReloadAnimationViewController: UIViewController {
         self?.dataSource.data.remove(at: context.index)
       }
     )
-  }
-
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    reloadButton.frame = CGRect(x: 0, y: view.bounds.height - 44,
-                                width: view.bounds.width, height: 44)
-  }
+  } 
 
   @objc func reload() {
     currentDataIndex = (currentDataIndex + 1) % data.count
