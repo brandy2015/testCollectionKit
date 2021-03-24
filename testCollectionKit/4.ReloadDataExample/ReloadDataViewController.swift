@@ -19,6 +19,9 @@ class ReloadDataViewController: UIViewController {
     }
 
     let dataSource = ArrayDataSource<Int>(data: Array(0..<5)) { (_, data) in
+        
+        print("这个data是",data)
+        
         return "\(data)"
     }
 
@@ -42,7 +45,7 @@ class ReloadDataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
    
-        collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 54, right: 10)
+        collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
 
         provider = BasicProvider(
             dataSource: dataSource,
@@ -54,7 +57,7 @@ class ReloadDataViewController: UIViewController {
         view.text = "\(data)"
       },
       sizeSource: { (index, data, _) in
-        return CGSize(width: 80, height: data % 3 == 0 ? 120 : 80)
+        return CGSize(width: 80, height: 80)//data % 3 == 0 ? 120 : 80)
       },
       layout: FlowLayout(lineSpacing: 15,
                          interitemSpacing: 15,
@@ -63,7 +66,13 @@ class ReloadDataViewController: UIViewController {
                          alignContent: .center),
       animator: ScaleAnimator(),
       tapHandler: { [weak self] context in
-        self?.dataSource.data.remove(at: context.index)
+        
+//        context.data
+        print("点按了")
+        print(context.index)
+//        self?.dataSource.data.remove(at: context.index)
+            //        这里让他变大
+        
       }
     )
   }

@@ -17,12 +17,37 @@ class HorizontalGalleryViewController: UIViewController {
       set { collectionView.provider = newValue }
     }
     
+    
+    @IBOutlet weak var imageViewC: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        let testImages: [UIImage] = [
+          UIImage(named: "l1")!,
+          UIImage(named: "l2")!,
+          UIImage(named: "l3")!,
+          UIImage(named: "1")!,
+          UIImage(named: "2")!,
+          UIImage(named: "3")!,
+          UIImage(named: "4")!,
+          UIImage(named: "5")!,
+          UIImage(named: "6")!
+        ]
+        
+        
+        let testImageXs = testImages
+        
+         
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         let visibleFrameInsets = UIEdgeInsets(top: 0, left: -100, bottom: 0, right: -100)
+        
+        
         provider = BasicProvider(
-            dataSource: testImages,
+            dataSource: testImageXs,
             viewSource: ClosureViewSource(viewGenerator: { (data, index) -> UIImageView in
                 let view = UIImageView()
                 view.layer.cornerRadius = 5
@@ -33,8 +58,17 @@ class HorizontalGalleryViewController: UIViewController {
             }),
             sizeSource: UIImageSizeSource(),
             layout: WaterfallLayout(columns: 2, spacing: 10).transposed().insetVisibleFrame(by: visibleFrameInsets),
-            animator: WobbleAnimator()
+            animator: WobbleAnimator(),
+            
+            tapHandler: { [weak self] context in
+               
+                // 这里是点按之后的处理
+                self?.imageViewC.image = context.dataSource.data(at: context.index)
+            }
         )
+         
+        
     }
 
 }
+ 

@@ -37,6 +37,10 @@
 		D6ACE15F25E36C2C00FCBD65 /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8776F25E3682600F463E7 /* SelectionButton.swift */; };
 		D6ACE16025E36C2C00FCBD65 /* AnimatorExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8777025E3682600F463E7 /* AnimatorExampleViewController.swift */; };
 		D6ACE16125E36C2C00FCBD65 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8777125E3682600F463E7 /* ZoomAnimator.swift */; };
+		D6E346DC260B2F0900C5BFE1 /* SimpleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E346D9260B2F0900C5BFE1 /* SimpleAnimator.swift */; };
+		D6E346DD260B2F0900C5BFE1 /* FadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E346DA260B2F0900C5BFE1 /* FadeAnimator.swift */; };
+		D6E346DE260B2F0900C5BFE1 /* ScaleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E346DB260B2F0900C5BFE1 /* ScaleAnimator.swift */; };
+		D6E346E1260B2F2500C5BFE1 /* WobbleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E346E0260B2F2500C5BFE1 /* WobbleAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,10 @@
 		D6A8776F25E3682600F463E7 /* SelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButton.swift; sourceTree = "<group>"; };
 		D6A8777025E3682600F463E7 /* AnimatorExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorExampleViewController.swift; sourceTree = "<group>"; };
 		D6A8777125E3682600F463E7 /* ZoomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomAnimator.swift; sourceTree = "<group>"; };
+		D6E346D9260B2F0900C5BFE1 /* SimpleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAnimator.swift; sourceTree = "<group>"; };
+		D6E346DA260B2F0900C5BFE1 /* FadeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeAnimator.swift; sourceTree = "<group>"; };
+		D6E346DB260B2F0900C5BFE1 /* ScaleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleAnimator.swift; sourceTree = "<group>"; };
+		D6E346E0260B2F2500C5BFE1 /* WobbleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobbleAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,7 @@
 		D616112925E3305E00A7CB3D /* testCollectionKit */ = {
 			isa = PBXGroup;
 			children = (
+				D6E346D8260B2EF200C5BFE1 /* Animator */,
 				D616116525E361BF00A7CB3D /* 1.HorizontalGalleryExample */,
 				D6A8775B25E3677400F463E7 /* 2.GridExample */,
 				D6A8775F25E3679500F463E7 /* 3.ArticleExample */,
@@ -230,6 +239,17 @@
 				D6A8777125E3682600F463E7 /* ZoomAnimator.swift */,
 			);
 			path = 8.AnimatorExample;
+			sourceTree = "<group>";
+		};
+		D6E346D8260B2EF200C5BFE1 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				D6E346DA260B2F0900C5BFE1 /* FadeAnimator.swift */,
+				D6E346DB260B2F0900C5BFE1 /* ScaleAnimator.swift */,
+				D6E346E0260B2F2500C5BFE1 /* WobbleAnimator.swift */,
+				D6E346D9260B2F0900C5BFE1 /* SimpleAnimator.swift */,
+			);
+			path = Animator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E346DD260B2F0900C5BFE1 /* FadeAnimator.swift in Sources */,
 				D6ACE15025E36C1200FCBD65 /* ArticleData.swift in Sources */,
 				D6ACE15125E36C1200FCBD65 /* ArticleView.swift in Sources */,
 				D6ACE15225E36C1200FCBD65 /* ArticleExampleViewController.swift in Sources */,
@@ -363,7 +384,10 @@
 				D6ACE16125E36C2C00FCBD65 /* ZoomAnimator.swift in Sources */,
 				D6A8774C25E362DF00F463E7 /* ExampleView.swift in Sources */,
 				D6A8774F25E362ED00F463E7 /* TestData.swift in Sources */,
+				D6E346DC260B2F0900C5BFE1 /* SimpleAnimator.swift in Sources */,
+				D6E346DE260B2F0900C5BFE1 /* ScaleAnimator.swift in Sources */,
 				D616112F25E3305E00A7CB3D /* ViewController.swift in Sources */,
+				D6E346E1260B2F2500C5BFE1 /* WobbleAnimator.swift in Sources */,
 				D6A8775025E362ED00F463E7 /* LabelProvider.swift in Sources */,
 				D6A8775825E3632100F463E7 /* Messages.swift in Sources */,
 				D6A8775125E362ED00F463E7 /* DynamicView.swift in Sources */,

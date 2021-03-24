@@ -32,7 +32,7 @@ class HeaderExampleViewController: UIViewController {
 
     let sections: [Provider] = (1...10).map { _ in
       return BasicProvider(
-        dataSource: ArrayDataSource(data: Array(1...9)),
+        dataSource: ArrayDataSource(data: Array(1...6)),
         viewSource: ClosureViewSource(viewUpdater: { (view: SquareView, data: Int, index: Int) in
           view.backgroundColor = UIColor(hue: CGFloat(index) / 10,
                                          saturation: 0.68, brightness: 0.98, alpha: 1)
