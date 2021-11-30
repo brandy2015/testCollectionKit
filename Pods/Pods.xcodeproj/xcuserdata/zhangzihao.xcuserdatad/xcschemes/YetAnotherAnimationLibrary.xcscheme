@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BCAF75654831E7A30C7E1A81B31CF01"
-               BuildableName = "Pods_testCollectionKit.framework"
-               BlueprintName = "Pods-testCollectionKit"
+               BlueprintIdentifier = "057537351096689C222BB2683CEB0F4D"
+               BuildableName = "YetAnotherAnimationLibrary.framework"
+               BlueprintName = "YetAnotherAnimationLibrary"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
