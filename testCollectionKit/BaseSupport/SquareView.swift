@@ -19,7 +19,7 @@ class SquareView: DynamicView {
 
   public override init(frame: CGRect) {
     super.init(frame: frame)
-    layer.cornerRadius = 4
+    layer.cornerRadius = 20
 
     textLabel.textColor = .white
     textLabel.textAlignment = .center
