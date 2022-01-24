@@ -9,7 +9,7 @@
 import UIKit
 import CollectionKit
 
-let kGridCellSize = CGSize(width: 50, height: 50)
+let kGridCellSize = CGSize(width: 100, height: 100)
 let kGridSize = (width: 20, height: 20)
 let kGridCellPadding:CGFloat = 10
 
@@ -48,5 +48,6 @@ class GridViewController: UIViewController {
       layout: layout,
       animator: WobbleAnimator()
     )
+//      provider.numberOfSections = 3
   }
 }
